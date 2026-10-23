@@ -39,8 +39,7 @@ export default function Checkout() {
       <main className="checkout-page">
         <section className="checkout-form">
           <h1>Thank you!</h1>
-          <p>Your demo order has been submitted successfully.</p>
-          <p>No real payment was made, and no order was saved to a server.</p>
+          <p>Your order has been submitted successfully.</p>
           <button
             className="place-order-button"
             onClick={() => navigate("/")}
