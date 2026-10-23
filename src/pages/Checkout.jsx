@@ -183,7 +183,7 @@ export default function Checkout() {
             <strong>{formatPrice(total)}</strong>
           </div>
 
-          <p>Demo checkout only. Payment is not connected.</p>
+          <p>Payment Checkout.</p>
         </aside>
       </div>
     </main>
