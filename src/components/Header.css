@@ -1,0 +1,205 @@
+
+.site-header {
+  height: 76px;
+  padding: 0 max(28px, calc((100% - 1200px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #171717;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+.site-logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.site-logo span {
+  color: #c5a45b;
+  margin-left: 5px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.header-link:hover {
+  color: #e0c783;
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 50px;
+  background: #c5a45b;
+  color: #171717;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+ 
+
+.site-header {
+  min-height: 88px;
+  padding: 0 clamp(24px, 10.5vw, 172px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #171717;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #f5f1e8;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.site-logo span {
+  color: #c5a45b;
+  margin-left: 8px;
+  font-weight: 800;
+  letter-spacing: -1.4px;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    min-height: 72px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .site-logo {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+
+  .site-logo span {
+    margin-left: 4px;
+    letter-spacing: -0.8px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .site-logo {
+    font-size: 24px;
+    letter-spacing: -0.9px;
+  }
+
+  .site-logo span {
+    margin-left: 4px;
+    letter-spacing: -0.8px;
+  }
+}
+
+.header-link:hover {
+  color: #e0c783;
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 50px;
+  background: #c5a45b;
+  color: #171717;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    min-height: 70px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .site-logo {
+    font-size: 23px;
+    letter-spacing: -0.8px;
+  }
+
+  .header-actions {
+    gap: 14px;
+  }
+
+  .header-link {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .header-link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+  .header-actions {
+    gap: 14px;
+  }
+
+  .header-link {
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .header-link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.header-link[href="/wishlist"] svg {
+  color: #e53935;
+  stroke: #e53935;
+}
+
+.header-link[href="/wishlist"]:hover svg {
+  color: #ff5252;
+  stroke: #ff5252;
+}

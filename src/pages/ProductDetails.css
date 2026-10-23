@@ -1,0 +1,168 @@
+
+.details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 28px 60px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #625b4e;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #a8873e;
+}
+
+.details-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 40px;
+  border: 1px solid #e5dfd2;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.details-image {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #f0ece4;
+  border-radius: 14px;
+}
+
+.details-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+}
+
+.details-info {
+  align-self: center;
+}
+
+.details-info h1 {
+  margin: 12px 0 16px;
+  color: #171717;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.3;
+}
+
+.details-rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #b08b3c;
+  font-size: 14px;
+}
+
+.details-rating span {
+  color: #8a8377;
+}
+
+.details-price {
+  margin: 24px 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: #171717;
+}
+
+.details-description {
+  color: #625b4e;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 28px 0;
+  color: #24211c;
+  font-weight: 600;
+}
+
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 6px;
+  border: 1px solid #e5dfd2;
+  border-radius: 10px;
+}
+
+.quantity-buttons button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 7px;
+  background: #f5f1e8;
+  color: #725923;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.2s ease;
+}
+
+.quantity-buttons button:hover:not(:disabled) {
+  background: #e8d9b5;
+}
+
+.quantity-buttons button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.details-add-button {
+  display: flex;
+  width: 100%;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #c5a45b;
+  border-radius: 10px;
+  background: #c5a45b;
+  color: #171717;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.details-add-button:hover {
+  background: #d6b96f;
+}
+
+@media (max-width: 760px) {
+  .details-page {
+    padding: 24px 16px 40px;
+  }
+
+  .details-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 18px;
+  }
+
+  .details-image {
+    min-height: 280px;
+  }
+
+  .details-image img {
+    height: 240px;
+  }
+}
